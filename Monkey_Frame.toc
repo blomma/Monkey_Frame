@@ -1,0 +1,6 @@
+## Interface: 1300
+## Title: Monkey_Frame
+## Notes: Changes display of hp/mana values and adds a percentage
+Monkey_PlayerFrame.xml
+Monkey_PetFrame.xml
+Monkey_TargetFrame.xml

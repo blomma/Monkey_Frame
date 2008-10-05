@@ -1,0 +1,28 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
+    <Script file="Monkey_TargetFrame.lua"/>
+    
+    <!-- HP Target Text START -->
+    <Frame parent="TargetFrameHealthBar" setAllPoints="true">
+        <Layers>
+            <Layer level="OVERLAY">
+                <FontString name="Monkey_TargetHealthText" inherits="GameFontNormalSmall" text="DEAD" hidden="false">
+                    <Anchors>
+                        <Anchor point="CENTER" />
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+    </Frame>
+    
+    <Frame name="Monkey_TargetFrame" hidden="true">
+        <Scripts>
+            <OnLoad>
+                Monkey_TargetFrameOnLoad();
+            </OnLoad>
+            <OnEvent>
+                Monkey_TargetFrameOnEvent( event );
+            </OnEvent>
+        </Scripts>
+    </Frame>
+</Ui>
